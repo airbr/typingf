@@ -28,9 +28,10 @@
 
   <label for="message" class="sr">Text</label>
   <input tabindex="0" autofocus id="text" type="message" name="message" placeholder="Type something…" size="30" maxlength="120" spellcheck="false">
-
-  <p>
-    <button style="font-size: 48px;" type="submit">Send Message</button>
+  </br>
+  </br>
+  <p class="button-send">
+    <button style="font-size: 36px;" type="submit">Send Message</button>
   </p>
 </form>
 </main>
@@ -42,11 +43,16 @@
   margin: 0;
   padding: 0;
 }
+.button-send {
+  text-align: center;
+
+}
 :root {
+  overflow-y: auto;
   --hue: 223;
   --bg: hsl(var(--hue),90%,15%);
   --fg: hsl(var(--hue),10%,90%);
-  font-size: calc(20px + (60 - 20) * (100vw - 320px) / (1280 - 320));
+  font-size: calc(28px + (60 - 20) * (100vw - 320px) / (1280 - 320));
 }
 body, input {
   color: black;
